@@ -1,0 +1,355 @@
+/* Versão alpha */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&family=Playfair+Display&family=Sedgwick+Ave&display=swap');
+
+
+nav#menu{
+    display: block;
+    position: relative;
+    top: -130px;
+    left: 20px;
+}
+
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+}
+nav#menu li{
+    
+    display: inline-block;
+    background-color: #EAB556;
+    padding: 30px;
+    margin: 2px;
+    transition: 2s;
+}
+nav#menu li:hover{
+    background-color: #b38b41ad;
+}
+nav#menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Playfair Display', serif;
+}
+nav#menu a:hover{
+    color: black;
+    text-decoration: underline;
+}  
+
+div#interface{
+    /* 600 padrão*/
+    width: 600px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 110px auto;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 5px #32774e85;
+}
+
+header#cabecalho h1#nome{
+    color: #9B2915;
+    /*font-family: 'Goblin One', cursive, sans-serif;*/
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 3.7em;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.493);
+    margin-top: -95px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/*PRINCIPAL*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to left, #61E294, #EDAFB8 84%);
+   /* height: 100%;
+    width: 100%; */
+}
+
+a{
+    color: plum;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+button#whats{
+    position: fixed; 
+    /*600px tá de boa */
+    top: 700px;
+    margin-left: -60px;
+    padding: 10px;
+    z-index: 10000000;
+    max-width: 150px;
+    max-height: 150px;
+    width: 100px;
+    height: 100px;
+    padding: 22px;
+    background: url("../_imagens/whatsapp\ 200.png") no-repeat;
+    background-position: 50% 50%;
+    background-size: 70px;
+    border-style: none;
+    cursor: pointer;
+}
+
+@-webkit-keyframes whats{
+    from {-webkit-transform: rotate(5deg)}
+    to   {-webkit-transform: rotate(-5deg)}
+}
+@keyframes whats{
+    from { transform: rotate(5deg)}
+    to { transform: rotate(-5deg)}
+}
+button#whats {
+    -webkit-animation: whats 0.6s alternate 8 ease-in-out;
+            animation: whats 0.6s alternate 8 ease-in-out;
+            animation-delay: 16s;
+}
+
+
+button#whats:hover{
+    /*Colocar efeitos para quando o user entrar na area do whats */
+}
+
+/*CORPO&RODAPE*/
+section#corpo{
+    display: block;
+    width: 500px; /* Verificar uma largura melhor para corpo*/
+    float: left; /*Seria preciso caso tivesse um aside */
+    padding: 15px;
+    margin-left: 35px;
+    margin-right: 20px;
+}
+
+footer#rodape{
+    clear: both;
+    border-top: 1px groove grey; /*Verificar o melhor tipo de linha*/
+}
+
+footer#rodape p{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/*MEDIA*/
+/*Analisar uma posição para que os icones apareçam ao lado, no menu */
+img#icone-menu{
+    position: absolute;
+}
+img#logo{
+    position: relative;
+    max-width: 200px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    left: 250px;
+    top: 12px;
+ }
+
+ .logomarca{
+    position: absolute;
+    padding: 30px;
+    width: 30px;
+    margin-top: 0px;
+    background: url("../_imagens/logo-cantim\ sem\ fundo\ 250.png") no-repeat;
+    background-position: 50% 50%;
+    background-size: 120px;
+    -webkit-transition: all 2s ease;
+  }
+  .logomarca:hover{
+    width: 120px;
+    height: 120px;
+    margin-left: -5px;
+    margin-top: -5px;
+    background: url("../_imagens/logo-cantin.png") no-repeat;
+    background-position: 50% 50% ;
+    background-size: 150px;
+    padding: 0%;
+    background-color: aliceblue;
+  }
+
+ .album-fotos {
+    border-radius: 5px;
+    border: 3px solid black;
+    width: 496px;
+    height: 200px;
+    overflow: hidden;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.411);
+    -webkit-transition: all 4s ease-in;
+  }
+  
+  .album-fotos:hover{
+  -webkit-transform: scale(1.2);
+  background-color: rgba(0, 0, 0, 0.753);
+  }
+  
+  .foto{
+    -webkit-transition: all 4s ease-in;
+  }
+  
+  /* Backgrounds */
+  
+  .cc1 {
+    background: url("../_imagens/edited/cantim\ P\ 525x400.jpg") no-repeat;
+    /* manter a resolução de altura para não bugar com o span */ 
+    background-position: 0% -110px;
+    background-size: 500px;
+  }
+  
+  .cc2 {
+    background: url("../_imagens/edited/cantin\ dentro\ G.jpg") no-repeat;
+    background-position: 50% -110%;
+    background-size: 800px;
+  }
+  
+  .cc3{
+    background: url("../_imagens/edited/cantin\ fora\ G.jpg") no-repeat;
+    background-position: 50% -110%;
+    background-size: 800px;
+  }
+  
+  .album-fotos:hover .cc1{
+    background-size: 480px;
+    background-position: 10px -70px;
+    }
+  
+  .album-fotos:hover .cc2{
+    background-size: 780px;
+    background-position: 8px -30px;
+    }
+  
+  .album-fotos:hover .cc3{
+    background-size: 780px;
+    background-position: 8px -60px;
+  }
+
+  .foto span{
+    opacity: 0;
+  line-height: 370px;
+  margin-left: 20px;
+  color: #9B2915;
+  background-color: rgba(255, 255, 255, 0.644);
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.568);
+  padding: 0px;
+  font: 'Nunito', sans-serif;
+  font-weight: 800;
+  }
+  
+  .album-fotos:hover span{
+    opacity: 1;
+  }
+
+  .seguinte{
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-top: -125px;
+    margin-left: 510px;
+    background: url("../_imagens/avancar.png") no-repeat;
+    background-position: 25% 25%;
+    background-size: 100%;
+    cursor: pointer;
+  }
+  
+  .anterior{
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-top: -145px;
+    margin-left: -50px;
+    background: url("../_imagens/voltar.png") no-repeat;
+    background-position: 25% 25%;
+    background-size: 100%;
+    cursor: pointer;
+  }
+
+/*ARTIGO*/
+article#noticia-principal h1{
+    color: #EAB556;
+    font-size: 2.1em;
+    font-family: 'Sedgwick Ave', cursive;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+article#noticia-principal h2{
+    font-size: 1.5em;
+    font-family: 'Playfair Display', serif;
+    color: #8D6B94;
+    padding-top: 10px;
+    margin: 0px 0px 10px 0px ;
+}
+article#noticia-principal p{
+    margin-top: 0px;
+    font-size: 1em;
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+/*APIS*/
+button#mais{
+   /* margin-left: 360px;
+    margin-top: 5px; */
+    margin: 5px auto;
+    padding: 12px;
+    width: 150px;
+    border-radius: 5px;
+    color: white;
+    background-color: #8D6B94;
+    transition: transform 1s;
+    transform: translateX(0) scale(1);   
+    border: none;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+    display: block;
+}
+
+a{
+    color: white;
+}
+
+button#mais:hover,
+button#mais:focus{
+    transform: translate(10px) scale(1.5);
+    animation: none;
+    background-color: #705575e5;
+}
+
+button#mais:target{
+    /*display: none; --> some com a tag */
+}
+
+button#voltar{
+    margin: 5px auto;
+    padding: 12px;
+    width: 150px;
+    border-radius: 5px;
+    color: white;
+    background-color: #8D6B94;
+    transition: transform 1s;
+    transform: translateX(0) scale(1);   
+    border: none;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+    display: block;
+}
+
+button#voltar:hover,
+button#voltar:focus{
+    transform: translate(10px) scale(1.5);
+    animation: none;
+    background-color: #705575e5;
+}
+
+iframe#map{
+    border-color: #8D6B94;
+    margin: auto auto 5px auto;
+    width: 499px;
+    height: 450px;
+}

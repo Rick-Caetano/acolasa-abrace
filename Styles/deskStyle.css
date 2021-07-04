@@ -1,0 +1,193 @@
+/* Versão beta */
+@charset "UTF-8";
+
+/* font-family: 'Open Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* font-family: 'Titillium Web', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+/* stilo da aba da logo */
+
+div#aba-logo{
+    /*display: inline-block;*/
+    background-color: white;
+    padding: 5px;
+    height: 150px;
+    width: 1299px;
+    margin: auto;
+    box-shadow: 5px 5px 5px #32774e85;
+}
+
+img#logo{
+    position: relative;
+    float: left;
+    top: -55px;
+    left: 300px;
+
+}
+
+/*INTERFACE*/
+div#interface{
+ /* 960 padrão*/
+ width: 1200px;
+ border-radius: 10px;
+ background-color: white;
+ margin: 30px auto 10px auto;
+ padding: 10px 10px 10px 10px;
+ box-shadow: 5px 5px 5px #32774e85;
+}
+
+/*CABEÇALHO*/
+header#cabecalho h1#nome{
+    background-color: #6C9923;
+    color: white;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.493);
+    margin: 30px auto;
+    padding: 20px;
+    font-size: 2.4em;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    
+}
+
+/*PRINCIPAL*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /*overflow-x: hidden; vertical é y e horizonta é x*/
+    /*background-image: linear-gradient(to left, #61E294, #EDAFB8 );
+    height: 100%;*/
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+button#whats{
+    position: fixed; 
+    /* top-66 e left-8 padrão */
+    top: 80%;
+    left: 88%;
+    padding: 10px;
+    z-index: 10000000;
+    max-width: 150px;
+    max-height: 150px;
+    width: 100px;
+    height: 100px;
+    padding: 22px;
+    background: url("../_imagens/whatsapp\ 200.png") no-repeat;
+    background-position: 50% 50%;
+    background-size: 70px;
+    border-style: none;
+    cursor: pointer;
+}
+
+@-webkit-keyframes whats{
+    from {-webkit-transform: rotate(5deg)}
+    to   {-webkit-transform: rotate(-5deg)}
+}
+@keyframes whats{
+    from { transform: rotate(5deg)}
+    to { transform: rotate(-5deg)}
+}
+button#whats {
+    -webkit-animation: whats 0.6s alternate 8 ease-in-out;
+            animation: whats 0.6s alternate 8 ease-in-out;
+            animation-delay: 16s;
+}
+
+
+button#whats:hover{
+    /*Colocar efeitos para quando o user entrar na area do whats */
+}
+
+/*CORPO&RODAPE*/
+section#corpo{
+    padding: 5px;
+   /* margin-left: 75px;*/
+    margin: 60px auto;
+    max-width: 1300px;
+    /*max-inline-size: 500px; -> bom para celular*/
+}
+
+footer#rodape{
+    display: block;
+    width: 1299px;
+    height: 245px;
+    padding: 10px;
+    margin: 10px auto -10px auto;
+    background-color: #313131;
+}
+
+footer#rodape img#logo-footer{
+    margin-top: 70px;
+    margin-left: 80px;
+
+}
+
+footer#rodape div#texto-final{
+    margin: -140px auto;
+    width: 300px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+footer#rodape div#texto-final p{
+    color: white;
+}
+
+footer#rodape div#facebook-page iframe{
+    margin-top: -60px;
+    margin-left: 900px;
+}
+
+div#creditos{
+    background-color: #2C2C2C;
+    margin: 10px auto;
+    padding: 10px;
+    height: 60px;
+    width: 1299px;
+}
+
+div#creditos p{
+    color: #ffffffa8;
+    text-align: center;
+}
+
+/*ARTIGO*/
+article#noticia-principal{
+    /*salvação*/
+    max-width: 1500px;
+}
+
+article#noticia-principal h1{
+    /*color: #66942f;*/
+    color: #66942f;
+    font-size: 2.1em;
+    font-family: 'Sedgwick Ave', cursive;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    margin: auto;
+    text-align: center;
+}
+
+article#noticia-principal h2{
+    font-size: 1.5em;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 500;
+    padding-top: 10px;
+}
+article#noticia-principal p, article#noticia-principal ul{
+    color: #727272;
+    font-size: 0.9em;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    margin: 0px 55px auto 55px;
+}
+
