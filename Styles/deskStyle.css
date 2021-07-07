@@ -11,21 +11,80 @@
 /* stilo da aba da logo */
 
 div#aba-logo{
-    /*display: inline-block;*/
-    background-color: white;
+    position: relative;
     padding: 5px;
-    height: 150px;
-    width: 1299px;
-    margin: auto;
-    box-shadow: 5px 5px 5px #32774e85;
+    height: 300px;
+    /*width 1299 padrão*/
+    max-width: 2000px;
+    margin: -10px auto;
 }
 
-img#logo{
-    position: relative;
-    float: left;
-    top: -55px;
-    left: 300px;
+div#aba-logo div#fundo{
+    background: url("../imagens/acolasa-fundoDeitado2.jpeg") no-repeat;
+    position: absolute;
+    z-index: -1;
+    background-position: 50% 50%;
+    background-size: 100%;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+/*
+div#aba-logo div#maisIcon{
+    background: url("../imagens/sinal-de-mais.png") no-repeat;
+    position: absolute;
+    background-position: 50% 50%;
+    width: 110px;
+    height: 35%;
+    background-size: 100px;
+    top: 10px;
+    left: 45%;
+    background-color: #66942f;
+}
 
+div#aba-logo div#logoAcolasa{
+    position: absolute;
+    background: url("../imagens/acolasa\ logo.png") no-repeat;
+    width: 40%;
+    height: 50%;
+    background-position: 50% 58%;
+    background-size: 600px;
+}
+
+div#aba-logo div#logoVictor{
+
+}
+*/
+
+div#aba-logo div#logos{
+    position: absolute;
+    width: 390px;
+    margin-left: 40%;
+    margin-top: -10px;
+
+}
+
+div#aba-logo img#logoAcolasa{
+    position:relative;
+    float: left;
+    top: -20px;
+    left: -90%;
+    width: 600px;
+}
+
+div#aba-logo img#logoVictor{
+    position: relative;
+    float: right;
+    top: -180px;
+    right: -65%;
+    width: 500px;
+    opacity: 0.9;
+}
+
+div#aba-logo h1{
+    margin: 240px auto;
+    text-align: center;
 }
 
 /*INTERFACE*/
@@ -101,7 +160,6 @@ button#whats {
             animation-delay: 16s;
 }
 
-
 button#whats:hover{
     /*Colocar efeitos para quando o user entrar na area do whats */
 }
@@ -161,15 +219,16 @@ div#creditos p{
 
 /*ARTIGO*/
 article#noticia-principal{
-    /*salvação*/
     max-width: 1500px;
+    /*serve para celular?*/
+    min-width: 400px;
 }
 
 article#noticia-principal h1{
     /*color: #66942f;*/
     color: #66942f;
     font-size: 2.1em;
-    font-family: 'Sedgwick Ave', cursive;
+    font-family: 'Titillium Web', sans-serif;
     margin-bottom: 5px;
     margin-top: 0px;
     margin: auto;
@@ -180,7 +239,7 @@ article#noticia-principal h2{
     font-size: 1.5em;
     font-family: 'Titillium Web', sans-serif;
     font-weight: 500;
-    padding-top: 10px;
+    text-align: left;
 }
 article#noticia-principal p, article#noticia-principal ul{
     color: #727272;
@@ -191,3 +250,11 @@ article#noticia-principal p, article#noticia-principal ul{
     margin: 0px 55px auto 55px;
 }
 
+button#contribuir{
+    background-color: #008bd2;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #014c72;
+    margin: 10px 550px auto;
+    width: 150px;
+}

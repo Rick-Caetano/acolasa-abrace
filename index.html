@@ -4,24 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="shortcut icon" href="imagens/favicon_acolasa/favicon.ico" type="image/x-icon">
-
-
     <link rel="stylesheet" href="Styles/deskStyle.css">
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+
+    <script>
+        function exibeMsm(){
+            Swal.fire({
+                title: '<p id="alerTit">Logo responderemos!</p>',
+                text: 'Obrigado por enviar sua mensagem!', //não aceita html no texto
+                icon:'success',
+                footer: '<a href="" style="color:black;">Caso prefira, temos também whatsapp</a>',
+                confirmButtonColor: '#008bd2',
+                backdrop: `rgba(0,0,123,0.4)`, //cor de fundo
+                showClass: {
+                    popup: 'animate__animated animate__fadeInDown'
+                    },
+                hideClass: {
+                    popup: 'animate__animated animate__fadeOutUp'
+                    }
+})}
+
+        function input(){
+            Swal.fire({
+                width:'600px',
+                icon:'question',
+                title:'Faça sua pre-reserva',
+                html: '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdSI69RWKBPwLwKAUhbXoqUf6Os4RE9tnqfpC5_JOMUXrKhrA/viewform?embedded=true" width="500" height="500" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>'
+            })
+        }
+    </script>
+
     <title>Campanha abrace</title>
 </head>
 
     <div id="aba-logo">
-        <img src="imagens/acolasa logo.png" alt="logomarca da acolasa" id="logo">
+        <div id="fundo"></div>
+        <div id="logos">
+        <img src="imagens/acolasa logo mais4.png" alt="logomarca da acolasa" id="logoAcolasa">
+        <img src="imagens/Logo-Victor-Dzenk-_1_-removebg-preview.png" alt="logomarca Victor Dzenk" id="logoVictor"></div>
+        <h1>CAMPANHA ABRACE</h1>
     </div>
 
         <section id="corpo">
             <header id="cabecalho">
-            <h1 id="nome">Campanha abrace</h1>
+            <h1 id="nome">Campanha do agasalho</h1>
             </header> 
 
             <article id="noticia-principal">
-                <h1>UMA PARCERIA ACOLASA E VICTORDZENK</h1>
+                <h1>UMA PARCERIA ACOLASA E VICTOR DZENK</h1>
                 <h2><b> O QUE É?</b></h2>
                 <p> A ACOLASA, preocupada com as pessoas em situação de vulnerabilidade da nossa cidade, Lagoa Santa, pensou, junto com o renomado estilista Victor Dzenk, em uma maneira de ajudar!
                 CAMPANHA ABRACE aquecendo o inverno de quem precisa. E para que ela aconteça precisamos que você faça parte também. 😉</p>
@@ -32,7 +66,10 @@
                     
                    </ul> 
                 <p> Vai ser muito bom ter você conosco. Podemos contar com você? Ative as notificações que em breve falamos dos detalhes. 🤗</p>
+
             </article>
+
+             <button id="contribuir" onclick="input()">Desejo contribuir</button>
         </section>
 
 
