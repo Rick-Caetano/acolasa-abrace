@@ -8,15 +8,21 @@
 /* font-family: 'Titillium Web', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
+@font-face {
+    /*https://www.dafont.com/pt/social-media-circled.font -> guia de icones da fonte*/
+    font-family: socialMedia;
+    src: url(../fontes/social_media_circled/Social\ Media\ Circled.otf);
+}
+
 /* stilo da aba da logo */
 
 div#aba-logo{
     position: relative;
     padding: 5px;
-    height: 300px;
+    height: 320px;
     /*width 1299 padrão*/
     max-width: 2000px;
-    margin: -10px auto;
+    margin: -12px auto;
 }
 
 div#aba-logo div#fundo{
@@ -26,9 +32,12 @@ div#aba-logo div#fundo{
     background-position: 50% 50%;
     background-size: 100%;
     opacity: 0.5;
+    /*padrão 100%*/
     width: 100%;
     height: 100%;
+    margin: auto;
     display: inline-block;
+
 }
 /*
 div#aba-logo div#maisIcon{
@@ -83,40 +92,43 @@ div#aba-logo img#logoVictor{
 }
 
 div#aba-logo h1{
-    margin: 240px auto;
+    position: relative;
+    margin: 230px auto;
     text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 3em;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.616);
 }
 
-/*INTERFACE*/
+/*INTERFACE
 div#interface{
- /* 960 padrão*/
+ /* 960 padrão
  width: 1200px;
  border-radius: 10px;
  background-color: white;
  margin: 30px auto 10px auto;
  padding: 10px 10px 10px 10px;
  box-shadow: 5px 5px 5px #32774e85;
-}
+}*/
 
 /*CABEÇALHO*/
 header#cabecalho h1#nome{
     background-color: #6C9923;
     color: white;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.493);
-    margin: 30px auto;
+    margin: 30px 10px 50px 10px;
     padding: 20px;
     font-size: 2.4em;
     font-family: 'Titillium Web', sans-serif;
     text-align: center;
-    
 }
 
 /*PRINCIPAL*/
 body{
     font-family: Arial, Helvetica, sans-serif;
     /*overflow-x: hidden; vertical é y e horizonta é x*/
-    /*background-image: linear-gradient(to left, #61E294, #EDAFB8 );
-    height: 100%;*/
+    /*background-image: linear-gradient(to left, #61E294, #EDAFB8 );*/
+    
 }
 
 a{
@@ -128,47 +140,51 @@ a:hover{
 }
 
 button#whats{
+    background-color: #52ce5f;
     position: fixed; 
     /* top-66 e left-8 padrão */
-    top: 80%;
-    left: 88%;
+    top: 90%;
+    left: 1000px;
     padding: 10px;
     z-index: 10000000;
-    max-width: 150px;
-    max-height: 150px;
-    width: 100px;
-    height: 100px;
+    max-width: 250px;
+    max-height: 60px;
+    width: 235px;
+    height: 40px;
     padding: 22px;
-    background: url("../_imagens/whatsapp\ 200.png") no-repeat;
-    background-position: 50% 50%;
-    background-size: 70px;
-    border-style: none;
+    border-radius: 20px;
+    border-style: double;
+    border-color: #2d7434;
     cursor: pointer;
+    transition: 1.5s;
 }
 
-@-webkit-keyframes whats{
-    from {-webkit-transform: rotate(5deg)}
-    to   {-webkit-transform: rotate(-5deg)}
-}
-@keyframes whats{
-    from { transform: rotate(5deg)}
-    to { transform: rotate(-5deg)}
-}
-button#whats {
-    -webkit-animation: whats 0.6s alternate 8 ease-in-out;
-            animation: whats 0.6s alternate 8 ease-in-out;
-            animation-delay: 16s;
+button#whats:hover {
+    background-color: #368d3f;
 }
 
-button#whats:hover{
-    /*Colocar efeitos para quando o user entrar na area do whats */
+button#whats span{
+    position: absolute;
+    color: white;
+    font-family: socialMedia;
+    font-size: 5em;
+    top: -15px;
+    left: -6px;
+}
+
+button#whats p{
+    position: absolute;
+    top: -8px;
+    left: 55px;
+    font-size: 1.4em;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*CORPO&RODAPE*/
 section#corpo{
     padding: 5px;
-   /* margin-left: 75px;*/
-    margin: 60px auto;
+   /* 60px auto -> padrão*/
+    margin: 0px auto;
     max-width: 1300px;
     /*max-inline-size: 500px; -> bom para celular*/
 }
@@ -195,7 +211,12 @@ footer#rodape div#texto-final{
     font-size: 15px;
 }
 
-footer#rodape div#texto-final p{
+footer#rodape div#texto-final span{
+    font-family: socialMedia;
+    font-size: 1.4em;
+}
+
+footer#rodape div#texto-final a, p{
     color: white;
 }
 
@@ -217,6 +238,12 @@ div#creditos p{
     text-align: center;
 }
 
+article#noticia-principal img#imagem1{
+    float: right;
+    margin: 20px 120px 30px auto;
+    padding: 15px;
+}
+
 /*ARTIGO*/
 article#noticia-principal{
     max-width: 1500px;
@@ -229,9 +256,7 @@ article#noticia-principal h1{
     color: #66942f;
     font-size: 2.1em;
     font-family: 'Titillium Web', sans-serif;
-    margin-bottom: 5px;
-    margin-top: 0px;
-    margin: auto;
+    margin: 10px auto 5px auto;
     text-align: center;
 }
 
@@ -240,6 +265,7 @@ article#noticia-principal h2{
     font-family: 'Titillium Web', sans-serif;
     font-weight: 500;
     text-align: left;
+    margin: 90px 54px auto;
 }
 article#noticia-principal p, article#noticia-principal ul{
     color: #727272;
@@ -247,14 +273,80 @@ article#noticia-principal p, article#noticia-principal ul{
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
     text-align: left;
-    margin: 0px 55px auto 55px;
+    margin: 20px 55px auto 60px;
 }
 
-button#contribuir{
+article#noticia-principal ul#redesSociais ul#acolasa, ul#victor{
+    list-style: none;
+}
+
+article#noticia-principal ul#redesSociais ul#acolasa a, ul#victor a{
+    text-decoration: none;
+    color: #008bd2;
+    font-size: 1em;
+}
+
+article#noticia-principal ul#redesSociais ul#acolasa a:hover, ul#victor a:hover{
+    color: #025179;
+}
+
+article#noticia-principal ul#redesSociais li#title{
+    list-style: none;
+    font-size: 1.6em;
+}
+
+article#noticia-principal ul span{
+    font-family: socialMedia;
+    font-size: 2em;
+}
+
+section#camisa{
+    position: relative;
+    margin: 10px 500px auto;
+    width: 300px;
+    height: 280px;
+    border-radius: 10px;
+    border: 2px dashed #66942f;
+    background-color: #b2b2b2;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.555);
+    transition: transform 2s;
+    transform: translateX(0) scale(1);
+}
+
+section#camisa:hover,
+section#camisa:focus{
+    transform: translate(10px) scale(1.35);
+    animation: none;
+}
+
+section#camisa img#imagem-camisa{
+    width: 200px;
+    position: absolute;
+    top: 5px;
+    left: 18%;
+    animation: ease-in;
+}
+
+section#camisa img#imagem-camisa:hover,
+section#camisa img#imagem-camisa:focus{
+    transform: translate(10px) scale(1.2);
+    transition: transform 2s;
+    left: 15%;
+}
+
+section#camisa button#contribuir{
+    position: absolute;
+    left: 26%;
+    margin: 240px auto;
     background-color: #008bd2;
-    padding: 10px;
+    padding: 8px;
     border-radius: 5px;
     border-color: #014c72;
-    margin: 10px 550px auto;
     width: 150px;
+    cursor: pointer;
 }
+
+section#camisa button#contribuir:hover{
+    color: white;
+}
+
