@@ -29,14 +29,13 @@ div#aba-logo div#fundo{
     background: url("../imagens/acolasa-fundoDeitado2.jpeg") no-repeat;
     position: absolute;
     z-index: -1;
-    background-position: 50% 50%;
+    background-position: 50% 45%;
     background-size: 100%;
     opacity: 0.5;
     /*padrão 100%*/
     width: 100%;
     height: 100%;
     margin: auto;
-    display: inline-block;
 
 }
 /*
@@ -66,14 +65,19 @@ div#aba-logo div#logoVictor{
 }
 */
 
-div#aba-logo div#logos{
-    position: absolute;
-    width: 390px;
-    margin-left: 40%;
-    margin-top: -10px;
-
+div#aba-logo div#logo1{
+    margin: -2% 20% auto 10%;
+    /*position: absolute;
+    top: -20px;
+    left: 15%;*/
 }
 
+div#aba-logo div#logo2{
+    position: absolute;
+    top: -45px;
+    right: 10%;
+}
+/*
 div#aba-logo img#logoAcolasa{
     position:relative;
     float: left;
@@ -90,10 +94,11 @@ div#aba-logo img#logoVictor{
     width: 500px;
     opacity: 0.9;
 }
-
+*/
 div#aba-logo h1{
     position: relative;
-    margin: 230px auto;
+    /*5%*/
+    margin: 5% auto;
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
     font-size: 3em;
@@ -174,7 +179,7 @@ button#whats span{
 
 button#whats p{
     position: absolute;
-    top: -8px;
+    top: -6px;
     left: 55px;
     font-size: 1.4em;
     font-family: 'Open Sans', sans-serif;
@@ -190,22 +195,28 @@ section#corpo{
 }
 
 footer#rodape{
-    display: block;
-    width: 1299px;
-    height: 245px;
+    position: relative;
+    top: 20px;
+    max-width: 1500px;
+    /*min 1000px -> padrão*/
+    min-width: 1000px;
+    height: 330px;
     padding: 10px;
-    margin: 10px auto -10px auto;
+    margin:0% auto 0% auto ;
     background-color: #313131;
 }
 
 footer#rodape img#logo-footer{
-    margin-top: 70px;
-    margin-left: 80px;
+    position: relative;
+    top: 20%;
+    left: 2%;
 
 }
 
 footer#rodape div#texto-final{
-    margin: -140px auto;
+    position: relative;
+    top: -70px;
+    left: 35%;
     width: 300px;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
@@ -220,17 +231,20 @@ footer#rodape div#texto-final a, p{
     color: white;
 }
 
-footer#rodape div#facebook-page iframe{
-    margin-top: -60px;
-    margin-left: 900px;
+footer#rodape div#facebook-page{
+    width: 350px;
+    position: relative;
+    top: -250px;
+    left: 65%;
 }
 
 div#creditos{
-    background-color: #2C2C2C;
-    margin: 10px auto;
+    position: relative;
+    left: 0px;
+    top: -205px;
     padding: 10px;
+    background-color: #2C2C2C;
     height: 60px;
-    width: 1299px;
 }
 
 div#creditos p{
