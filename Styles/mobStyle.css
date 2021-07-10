@@ -17,6 +17,16 @@
 /* stilo da aba da logo */
 
 @media (max-width: 1050px){
+
+    div#aba-logo h1{
+        position: relative;
+        margin:6% auto;
+        text-align: center;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 3em;
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.616);
+    }
+
     article#noticia-principal img#imagem1{
         float: right;
         padding: 15px;
@@ -46,7 +56,7 @@
         background-color: #52ce5f;
         position: fixed; 
         /* top-66 e left-8 padrão */
-        top: 95%;
+        top: 90%;
         left: 320px;
         padding: 10px;
         z-index: 10000000;
@@ -122,6 +132,7 @@ article#noticia-principal p, article#noticia-principal ul{
 }
 
         }
+
 
 
 div#aba-logo{
@@ -211,8 +222,6 @@ section#corpo{
     max-width: 1300px;
     /*max-inline-size: 500px; -> bom para celular*/
 }
-
-
 
 section.rodape ul#contato a{
     color:white; 
