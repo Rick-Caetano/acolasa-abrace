@@ -16,6 +16,58 @@
 
 /* stilo da aba da logo */
 
+@media (max-width: 750px) {
+    article#noticia-principal img#imagem1{
+    justify-content: center;
+    margin: auto 40px auto;
+    padding: 15px;
+    }
+
+    button#whats{
+        background-color: #52ce5f;
+        position: fixed; 
+        /* top-66 e left-8 padrão */
+        top: 85%;
+        left: 200px;
+        padding: 10px;
+        z-index: 10000000;
+        max-width: 250px;
+        max-height: 60px;
+        width: 190px;
+        height: 30px;
+        padding: 15px;
+        border-radius: 20px;
+        border-style: double;
+        border-color: #2d7434;
+        cursor: pointer;
+        transition: 1.5s;
+}
+
+button#whats:hover {
+        background-color: #368d3f;
+}
+
+button#whats span{
+    position: absolute;
+    color: white;
+    font-family: socialMedia;
+    font-size: 3.5em;
+    top: -27px;
+    left: -5px;
+}
+
+button#whats p{
+    color: white;
+    position: absolute;
+    top: 7px;
+    left: 50px;
+    font-size: 0.8em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+}
+
+
 div#aba-logo{
     position: relative;
     padding: 5px;
@@ -100,47 +152,7 @@ a:hover{
     text-decoration: underline;
 }
 
-button#whats{
-    background-color: #52ce5f;
-    position: fixed; 
-    /* top-66 e left-8 padrão */
-    top: 90%;
-    left: 1000px;
-    padding: 10px;
-    z-index: 10000000;
-    max-width: 250px;
-    max-height: 60px;
-    width: 235px;
-    height: 40px;
-    padding: 22px;
-    border-radius: 20px;
-    border-style: double;
-    border-color: #2d7434;
-    cursor: pointer;
-    transition: 1.5s;
-}
 
-button#whats:hover {
-    background-color: #368d3f;
-}
-
-button#whats span{
-    position: absolute;
-    color: white;
-    font-family: socialMedia;
-    font-size: 5em;
-    top: -36px;
-    left: -12px;
-}
-
-button#whats p{
-    color: white;
-    position: absolute;
-    top: 7px;
-    left: 60px;
-    font-size: 1.2em;
-    font-family: 'Open Sans', sans-serif;
-}
 
 /*CORPO&RODAPE*/
 section#corpo{
@@ -151,8 +163,6 @@ section#corpo{
     /*max-inline-size: 500px; -> bom para celular*/
 }
 
-
-
 section.rodape img#acolasa-footer{
     margin-top: 30px;
 }
@@ -162,7 +172,6 @@ section.rodape img#victor-footer{
     margin-left: -20px;
     width: 350px;
 }
-
 
 section.rodape ul#contato a{
     color:white; 
@@ -184,12 +193,6 @@ section.rodape ul#contato span{
 section.rodape div#final{
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
-}
-
-article#noticia-principal img#imagem1{
-    justify-content: center;
-    margin: auto 40px auto;
-    padding: 15px;
 }
 
 /*ARTIGO*/
