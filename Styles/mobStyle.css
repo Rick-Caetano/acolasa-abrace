@@ -15,11 +15,46 @@
 }
 
 /* inicio modelo tablets e dispositivo deitado */
-@media (max-width: 1050px){
+@media (max-width: 1350px){
+    div#aba-logo div#fundo{
+        background: url("../imagens/acolasa-fundoDeitado2.jpeg") no-repeat;
+        position: absolute;
+        z-index: -1;
+        background-position: 50% 40%;
+        background-size: 1500px;
+        opacity: 0.5;
+        /*padrão 100%*/
+        width: 100%;
+        height: 100%;
+        margin: auto;
+
+    }
+
+    div#aba-logo div#logo1{
+        position: static;
+        margin: 6% 10% auto;
+        /*margin: 10% 20% auto 10%;
+        position: absolute;
+        top: -20px;
+        left: 15%;*/
+    }
+    div#aba-logo div#logo1 img#logo-acolasa{
+        width: 410px;
+    }
+
+    div#aba-logo div#logo2{
+        position: absolute;
+        top: 0%;
+        right: 10%;
+    }
+
+    div#aba-logo div#logo2 img#logo-victor{
+        width: 400px;
+    }
 
     div#aba-logo h1{
         position: relative;
-        margin:6% auto;
+        margin: 0% auto;
         text-align: center;
         font-family: 'Titillium Web', sans-serif;
         font-size: 3em;
@@ -32,14 +67,11 @@
     }
 
     section.rodape img#acolasa-footer{
-        margin-top: 10px;
-        margin-left: 10px;
+
     }
     
     section.rodape img#victor-footer{
-        margin-top: 35px;
-        margin-left: 10px;
-        width: 350px;
+        width: 400px;
     }
 
 
@@ -48,6 +80,41 @@
 
 /* inicio modelo celulares  */
 @media (max-width: 750px) {
+
+    div#aba-logo div#fundo{
+        background: url("../imagens/acolasa-fundoDeitado2.jpeg") no-repeat;
+        position: absolute;
+        z-index: -1;
+        background-position: 50% 40%;
+        background-size: 800px;
+        opacity: 0.5;
+        /*padrão 100%*/
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+
+    div#aba-logo div#logo1{
+        position: static;
+        margin: 10% 10% auto;
+        /*margin: 10% 20% auto 10%;
+        position: absolute;
+        top: -20px;
+        left: 15%;*/
+    }
+    div#aba-logo div#logo1 img#logo-acolasa{
+        width: 310px;
+    }
+
+    div#aba-logo div#logo2{
+        position: absolute;
+        top: 14%;
+        right: 10%;
+    }
+
+    div#aba-logo div#logo2 img#logo-victor{
+        width: 300px;
+    }
 
     div#aba-logo h1{
         position: absolute;
@@ -152,46 +219,9 @@ div#aba-logo{
     padding: 5px;
     height: 320px;
     /*width 1299 padrão*/
-    max-width: 1000px;
+    max-width: 1300px;
     min-width: 400px;
     margin: -65px auto;
-}
-
-div#aba-logo div#fundo{
-    background: url("../imagens/acolasa-fundoDeitado2.jpeg") no-repeat;
-    position: absolute;
-    z-index: -1;
-    background-position: 50% 40%;
-    background-size: 800px;
-    opacity: 0.5;
-    /*padrão 100%*/
-    width: 100%;
-    height: 100%;
-    margin: auto;
-
-}
-
-
-div#aba-logo div#logo1{
-    position: static;
-    margin: 10% 10% auto;
-    /*margin: 10% 20% auto 10%;
-    position: absolute;
-    top: -20px;
-    left: 15%;*/
-}
-div#aba-logo div#logo1 img#logo-acolasa{
-    width: 310px;
-}
-
-div#aba-logo div#logo2{
-    position: absolute;
-    top: 14%;
-    right: 10%;
-}
-
-div#aba-logo div#logo2 img#logo-victor{
-    width: 300px;
 }
 
 
