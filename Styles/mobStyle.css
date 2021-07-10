@@ -21,8 +21,8 @@ div#aba-logo{
     padding: 5px;
     height: 320px;
     /*width 1299 padrão*/
-    max-width: 900px;
-    min-width: 500px;
+    max-width: 1000px;
+    min-width: 400px;
     margin: -65px auto;
 }
 
@@ -42,8 +42,10 @@ div#aba-logo div#fundo{
 
 
 div#aba-logo div#logo1{
-    margin: 10% 20% auto 10%;
-    /*position: absolute;
+    position: static;
+    margin: 10% 10% auto;
+    /*margin: 10% 20% auto 10%;
+    position: absolute;
     top: -20px;
     left: 15%;*/
 }
@@ -62,8 +64,8 @@ div#aba-logo div#logo2 img#logo-victor{
 }
 
 div#aba-logo h1{
-    position: relative;
-    margin: 12% auto;
+    position: absolute;
+    margin: 4% 35% auto;
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
     font-size: 2em;
