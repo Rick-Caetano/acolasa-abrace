@@ -22,7 +22,7 @@ div#aba-logo{
     height: 320px;
     /*width 1299 padrão*/
     width: 500px;
-    margin: -30px auto;
+    margin: -65px auto;
 }
 
 div#aba-logo div#fundo{
@@ -41,23 +41,23 @@ div#aba-logo div#fundo{
 
 
 div#aba-logo div#logo1{
-    margin: 3% 20% auto 10%;
+    margin: 10% 20% auto 10%;
     /*position: absolute;
     top: -20px;
     left: 15%;*/
 }
 div#aba-logo div#logo1 img#logo-acolasa{
-    width: 400px;
+    width: 310px;
 }
 
 div#aba-logo div#logo2{
     position: absolute;
-    top: 3%;
+    top: 14%;
     right: 10%;
 }
 
 div#aba-logo div#logo2 img#logo-victor{
-    width: 400px;
+    width: 300px;
 }
 
 div#aba-logo h1{
@@ -184,8 +184,8 @@ section.rodape div#final{
 }
 
 article#noticia-principal img#imagem1{
-    float: right;
-    margin: 20px 120px 30px auto;
+    justify-content: center;
+    margin: auto 40px auto;
     padding: 15px;
 }
 
