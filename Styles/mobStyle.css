@@ -52,6 +52,48 @@
         width: 400px;
     }
 
+    button#whats{
+        background-color: #52ce5f;
+        position: fixed; 
+        /* top-66 e left-8 padrão */
+        top: 90%;
+        left: 1000px;
+        padding: 10px;
+        z-index: 10000000;
+        max-width: 250px;
+        max-height: 60px;
+        width: 235px;
+        height: 40px;
+        padding: 22px;
+        border-radius: 20px;
+        border-style: double;
+        border-color: #2d7434;
+        cursor: pointer;
+        transition: 1.5s;
+    }
+    
+    button#whats:hover {
+        background-color: #368d3f;
+    }
+    
+    button#whats span{
+        position: absolute;
+        color: white;
+        font-family: socialMedia;
+        font-size: 5em;
+        top: -36px;
+        left: -12px;
+    }
+    
+    button#whats p{
+        color: white;
+        position: absolute;
+        top: 7px;
+        left: 60px;
+        font-size: 1.2em;
+        font-family: 'Open Sans', sans-serif;
+    }
+
     div#aba-logo h1{
         position: relative;
         margin: 0% auto;
@@ -120,7 +162,7 @@
         margin: 30px 35% auto;
         text-align: center;
         font-family: 'Titillium Web', sans-serif;
-        font-size: 2.5em;
+        font-size: 2.6em;
         text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.616);
     }
 
@@ -134,7 +176,7 @@
         z-index: 10000000;
         max-width: 250px;
         max-height: 60px;
-        width: 190px;
+        width: 210px;
         height: 30px;
         padding: 20px;
         border-radius: 20px;
@@ -152,23 +194,51 @@
         position: absolute;
         color: white;
         font-family: socialMedia;
-        font-size: 4em;
-        top: -27px;
+        font-size: 4.4em;
+        top: -32px;
         left: -10px;
     }
 
     button#whats p{
         color: white;
         position: absolute;
-        top: 7px;
-        left: 45px;
-        font-size: 1em;
+        top: 6px;
+        left: 50px;
+        font-size: 1.1em;
         font-family: 'Open Sans', sans-serif;
+    }
+
+    header#cabecalho h1#nome{
+        background-color: #6C9923;
+        color: white;
+        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.493);
+        margin: 30px 10px 50px 10px;
+        padding: 20px;
+        font-size: 2.1em;
+        font-family: 'Titillium Web', sans-serif;
+        text-align: center;
     }
 
     article#noticia-principal img#imagem1{
         float: right;
         padding: 15px;
+    }
+
+    article#noticia-principal h2{
+        font-size: 1.9em;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 500;
+        text-align: left;
+        margin: 90px 54px auto;
+    }
+    
+    article#noticia-principal p, article#noticia-principal ul{
+        color: #727272;
+        font-size: 1.1em;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+        text-align: justify;
+        margin: 20px 55px auto 60px;
     }
 
     section.rodape img#acolasa-footer{
@@ -183,22 +253,7 @@
         width: 250px;
     }
 
-    article#noticia-principal h2{
-        font-size: 1.7em;
-        font-family: 'Titillium Web', sans-serif;
-        font-weight: 500;
-        text-align: left;
-        margin: 90px 54px auto;
-    }
-    
-    article#noticia-principal p, article#noticia-principal ul{
-        color: #727272;
-        font-size: 1em;
-        font-weight: 400;
-        font-family: 'Open Sans', sans-serif;
-        text-align: justify;
-        margin: 20px 55px auto 60px;
-    }
+
 }
 
 /* inicio modelo celulares  */
@@ -383,7 +438,7 @@ a:hover{
 section#corpo{
     padding: 5px;
    /* 60px auto -> padrão*/
-    margin: 30px auto;
+    margin: 70px auto;
     max-width: 1300px;
     /*max-inline-size: 500px; -> bom para celular*/
 }
