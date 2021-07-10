@@ -26,6 +26,16 @@
 }
 
 @media (max-width: 750px) {
+
+    div#aba-logo h1{
+        position: absolute;
+        margin: 50px 35% auto;
+        text-align: center;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 2.5em;
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.616);
+    }
+
     article#noticia-principal img#imagem1{
     justify-content: center;
     margin: auto 40px auto;
@@ -36,7 +46,7 @@
         background-color: #52ce5f;
         position: fixed; 
         /* top-66 e left-8 padrão */
-        top: 90%;
+        top: 95%;
         left: 320px;
         padding: 10px;
         z-index: 10000000;
@@ -76,12 +86,12 @@ button#whats p{
 
 section.rodape img#acolasa-footer{
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 section.rodape img#victor-footer{
     margin-top: 45px;
-    margin-left: 10px;
+    margin-left: 5px;
     width: 350px;
 }
 /*
@@ -161,14 +171,7 @@ div#aba-logo div#logo2 img#logo-victor{
     width: 300px;
 }
 
-div#aba-logo h1{
-    position: absolute;
-    margin: 50px 35% auto;
-    text-align: center;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 2em;
-    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.616);
-}
+
 
 /*CABEÇALHO*/
 header#cabecalho h1#nome{
