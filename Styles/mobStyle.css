@@ -16,6 +16,15 @@
 
 /* stilo da aba da logo */
 
+@media (max-width: 1050px){
+    article#noticia-principal img#imagem1{
+        float: right;
+        padding: 15px;
+    }
+
+
+}
+
 @media (max-width: 750px) {
     article#noticia-principal img#imagem1{
     justify-content: center;
@@ -27,8 +36,8 @@
         background-color: #52ce5f;
         position: fixed; 
         /* top-66 e left-8 padrão */
-        top: 85%;
-        left: 200px;
+        top: 90%;
+        left: 320px;
         padding: 10px;
         z-index: 10000000;
         max-width: 250px;
@@ -65,7 +74,44 @@ button#whats p{
     font-family: 'Open Sans', sans-serif;
 }
 
+section.rodape img#acolasa-footer{
+    margin-top: 10px;
+    margin-left: 20px;
 }
+
+section.rodape img#victor-footer{
+    margin-top: 45px;
+    margin-left: 10px;
+    width: 350px;
+}
+/*
+article#noticia-principal h1{
+    /*color: #66942f;
+    color: #66942f;
+    font-size: 2.1em;
+    font-family: 'Titillium Web', sans-serif;
+    margin: 10px auto 5px auto;
+    text-align: center;
+}
+*/
+article#noticia-principal h2{
+    font-size: 1.7em;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    margin: 90px 54px auto;
+}
+
+article#noticia-principal p, article#noticia-principal ul{
+    color: #727272;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    margin: 20px 55px auto 60px;
+}
+
+        }
 
 
 div#aba-logo{
@@ -82,8 +128,8 @@ div#aba-logo div#fundo{
     background: url("../imagens/acolasa-fundoDeitado2.jpeg") no-repeat;
     position: absolute;
     z-index: -1;
-    background-position: 50% 45%;
-    background-size: 100%;
+    background-position: 50% 40%;
+    background-size: 800px;
     opacity: 0.5;
     /*padrão 100%*/
     width: 100%;
@@ -117,7 +163,7 @@ div#aba-logo div#logo2 img#logo-victor{
 
 div#aba-logo h1{
     position: absolute;
-    margin: 4% 35% auto;
+    margin: 50px 35% auto;
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
     font-size: 2em;
@@ -158,20 +204,12 @@ a:hover{
 section#corpo{
     padding: 5px;
    /* 60px auto -> padrão*/
-    margin: 0px auto;
+    margin: 30px auto;
     max-width: 1300px;
     /*max-inline-size: 500px; -> bom para celular*/
 }
 
-section.rodape img#acolasa-footer{
-    margin-top: 30px;
-}
 
-section.rodape img#victor-footer{
-    margin-top: 45px;
-    margin-left: -20px;
-    width: 350px;
-}
 
 section.rodape ul#contato a{
     color:white; 
@@ -202,30 +240,7 @@ article#noticia-principal{
     min-width: 400px;
 }
 
-article#noticia-principal h1{
-    /*color: #66942f;*/
-    color: #66942f;
-    font-size: 2.1em;
-    font-family: 'Titillium Web', sans-serif;
-    margin: 10px auto 5px auto;
-    text-align: center;
-}
 
-article#noticia-principal h2{
-    font-size: 1.6em;
-    font-family: 'Titillium Web', sans-serif;
-    font-weight: 500;
-    text-align: left;
-    margin: 90px 54px auto;
-}
-article#noticia-principal p, article#noticia-principal ul{
-    color: #727272;
-    font-size: 0.9em;
-    font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
-    text-align: justify;
-    margin: 20px 55px auto 60px;
-}
 
 article#noticia-principal ul#redesSociais ul#acolasa, ul#victor{
     list-style: none;
