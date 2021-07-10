@@ -15,7 +15,7 @@
 }
 
 /* inicio modelo tablets e dispositivo deitado */
-@media (max-width: 1350px){
+@media (max-width: 1550px){
     div#aba-logo div#fundo{
         background: url("../imagens/acolasa-fundoDeitado2.jpeg") no-repeat;
         position: absolute;
