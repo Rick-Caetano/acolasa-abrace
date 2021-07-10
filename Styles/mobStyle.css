@@ -78,6 +78,10 @@
         }
 /* final modelo tablets e dispositivo deitado */
 
+@media (max-width:1000px) {
+   
+}
+
 /* inicio modelo celulares  */
 @media (max-width: 750px) {
 
