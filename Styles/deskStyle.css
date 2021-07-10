@@ -22,7 +22,6 @@ div#aba-logo{
     height: 320px;
     /*width 1299 padrão*/
     max-width: 2000px;
-    min-width: 800px;
     margin: -12px auto;
 }
 
@@ -174,16 +173,15 @@ button#whats span{
     color: white;
     font-family: socialMedia;
     font-size: 5em;
-    top: -36px;
-    left: -12px;
+    top: -15px;
+    left: -6px;
 }
 
 button#whats p{
-    color: white;
     position: absolute;
-    top: 7px;
-    left: 60px;
-    font-size: 1.2em;
+    top: -6px;
+    left: 55px;
+    font-size: 1.4em;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -196,12 +194,12 @@ section#corpo{
     /*max-inline-size: 500px; -> bom para celular*/
 }
 
-/* footer antigo
 footer#rodape{
     position: relative;
-    top: 40px;
+    top: 20px;
     max-width: 1500px;
-    /*min 1000px -> padrão
+    /*min 1000px -> padrão*/
+    min-width: 1000px;
     height: 330px;
     padding: 10px;
     margin:0% auto 0% auto ;
@@ -252,39 +250,6 @@ div#creditos{
 div#creditos p{
     color: #ffffffa8;
     text-align: center;
-}*/
-
-section.rodape img#acolasa-footer{
-    margin-top: 30px;
-}
-
-section.rodape img#victor-footer{
-    margin-top: 45px;
-    margin-left: -20px;
-    width: 350px;
-}
-
-
-section.rodape ul#contato a{
-    color:white; 
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    transition: 1s;
-}
-
-section.rodape ul#contato a:hover{
-    color: #008bd2;
-}
-
-section.rodape ul#contato span{
-    font-family: socialMedia;
-    font-size: 1.4em;
-}
-
-section.rodape div#final{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
 }
 
 article#noticia-principal img#imagem1{
@@ -310,7 +275,7 @@ article#noticia-principal h1{
 }
 
 article#noticia-principal h2{
-    font-size: 1.6em;
+    font-size: 1.5em;
     font-family: 'Titillium Web', sans-serif;
     font-weight: 500;
     text-align: left;
@@ -321,7 +286,7 @@ article#noticia-principal p, article#noticia-principal ul{
     font-size: 0.9em;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
-    text-align: justify;
+    text-align: left;
     margin: 20px 55px auto 60px;
 }
 
@@ -351,7 +316,7 @@ article#noticia-principal ul span{
 
 section#camisa{
     position: relative;
-    margin: 20px auto;
+    margin: 10px 500px auto;
     width: 300px;
     height: 280px;
     border-radius: 10px;
@@ -386,7 +351,7 @@ section#camisa img#imagem-camisa:focus{
 section#camisa button#contribuir{
     position: absolute;
     left: 26%;
-    margin: 230px auto;
+    margin: 240px auto;
     background-color: #008bd2;
     padding: 8px;
     border-radius: 5px;
@@ -399,7 +364,3 @@ section#camisa button#contribuir:hover{
     color: white;
 }
 
-.meio{
-    display: flex;
-    justify-content: center;
-}

@@ -1,462 +1,73 @@
-/* Versão beta */
+/* Versão alpha */
 @charset "UTF-8";
-
-/* font-family: 'Open Sans', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
-/* font-family: 'Roboto', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-/* font-family: 'Titillium Web', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
-
-@font-face {
-    /*https://www.dafont.com/pt/social-media-circled.font -> guia de icones da fonte*/
-    font-family: socialMedia;
-    src: url(../fontes/social_media_circled/Social\ Media\ Circled.otf);
-}
-
-/* inicio modelo tablets e dispositivo deitado */
-@media (max-width: 2000px){
-    div#aba-logo div#fundo{
-        background: url("../imagens/acolasa-fundoDeitado2.jpeg") no-repeat;
-        position: absolute;
-        z-index: -1;
-        background-position: 50% 40%;
-        background-size: 1500px;
-        opacity: 0.5;
-        /*padrão 100%*/
-        width: 100%;
-        height: 100%;
-        margin: auto;
-    }
-
-    div#aba-logo div#logo1{
-        position: static;
-        margin: 6% 10% auto;
-        /*margin: 10% 20% auto 10%;
-        position: absolute;
-        top: -20px;
-        left: 15%;*/
-    }
-    div#aba-logo div#logo1 img#logo-acolasa{
-        width: 410px;
-    }
-
-    div#aba-logo div#logo2{
-        position: absolute;
-        top: 0%;
-        right: 10%;
-    }
-
-    div#aba-logo div#logo2 img#logo-victor{
-        width: 400px;
-    }
-
-    button#whats{
-        background-color: #52ce5f;
-        position: fixed; 
-        /* top-66 e left-8 padrão */
-        top: 90%;
-        left: 1200px;
-        padding: 10px;
-        z-index: 10000000;
-        max-width: 250px;
-        max-height: 60px;
-        width: 235px;
-        height: 40px;
-        padding: 22px;
-        border-radius: 20px;
-        border-style: double;
-        border-color: #2d7434;
-        cursor: pointer;
-        transition: 1.5s;
-    }
-    
-    button#whats:hover {
-        background-color: #368d3f;
-    }
-    
-    button#whats span{
-        position: absolute;
-        color: white;
-        font-family: socialMedia;
-        font-size: 5em;
-        top: -36px;
-        left: -12px;
-    }
-    
-    button#whats p{
-        color: white;
-        position: absolute;
-        top: 7px;
-        left: 60px;
-        font-size: 1.2em;
-        font-family: 'Open Sans', sans-serif;
-    }
-
-    div#aba-logo h1{
-        position: relative;
-        margin: 3% auto;
-        text-align: center;
-        font-family: 'Titillium Web', sans-serif;
-        font-size: 3em;
-        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.616);
-    }
-
-    article#noticia-principal img#imagem1{
-        float: right;
-        padding: 15px;
-    }
-
-    section.rodape img#acolasa-footer{
-        
-    }
-    
-    section.rodape img#victor-footer{
-        width: 400px;
-        margin: 40px auto;
-    }
-
-    header#cabecalho h1#nome{
-        background-color: #6C9923;
-        color: white;
-        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.493);
-        margin: 30px 10px 50px 10px;
-        padding: 20px;
-        font-size: 2.2em;
-        font-family: 'Titillium Web', sans-serif;
-        text-align: center;
-    }
-
-    article#noticia-principal img#imagem1{
-        float: right;
-        padding: 15px;
-    }
-
-    article#noticia-principal h2{
-        font-size: 2em;
-        font-family: 'Titillium Web', sans-serif;
-        font-weight: 500;
-        text-align: left;
-        margin: 90px 54px auto;
-    }
-    
-    article#noticia-principal p, article#noticia-principal ul{
-        color: #727272;
-        font-size: 1.2em;
-        font-weight: 400;
-        font-family: 'Open Sans', sans-serif;
-        text-align: justify;
-        margin: 20px 55px auto 60px;
-    }
-
-        }
-/* final modelo tablets e dispositivo deitado */
-
-@media (max-width:1055px) {
-    div#aba-logo div#fundo{
-        background: url("../imagens/acolasa-fundoDeitado2.jpeg") no-repeat;
-        position: absolute;
-        z-index: -1;
-        background-position: 50% 40%;
-        background-size: 1100px;
-        opacity: 0.5;
-        /*padrão 100%*/
-        width: 100%;
-        height: 100%;
-        margin: auto;
-
-    }
-
-    div#aba-logo div#logo1{
-        position: static;
-        margin: 6% 10% auto;
-        /*margin: 10% 20% auto 10%;
-        position: absolute;
-        top: -20px;
-        left: 15%;*/
-    }
-
-    div#aba-logo div#logo1 img#logo-acolasa{
-        width: 410px;
-    }
-
-    div#aba-logo div#logo2{
-        position: absolute;
-        top: -5%;
-        right: 10%;
-    }
-
-    div#aba-logo div#logo2 img#logo-victor{
-        width: 400px;
-    }
-
-    div#aba-logo h1{
-        position: absolute;
-        margin: 30px 35% auto;
-        text-align: center;
-        font-family: 'Titillium Web', sans-serif;
-        font-size: 2.6em;
-        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.616);
-    }
-
-    button#whats{
-        background-color: #52ce5f;
-        position: fixed; 
-        /* top-66 e left-8 padrão */
-        top: 90%;
-        left: 750px;
-        padding: 10px;
-        z-index: 10000000;
-        max-width: 250px;
-        max-height: 60px;
-        width: 210px;
-        height: 30px;
-        padding: 20px;
-        border-radius: 20px;
-        border-style: double;
-        border-color: #2d7434;
-        cursor: pointer;
-        transition: 1.5s;
-}
-
-    button#whats:hover {
-            background-color: #368d3f;
-    }
-
-    button#whats span{
-        position: absolute;
-        color: white;
-        font-family: socialMedia;
-        font-size: 4.4em;
-        top: -32px;
-        left: -10px;
-    }
-
-    button#whats p{
-        color: white;
-        position: absolute;
-        top: 6px;
-        left: 50px;
-        font-size: 1.1em;
-        font-family: 'Open Sans', sans-serif;
-    }
-
-    header#cabecalho h1#nome{
-        background-color: #6C9923;
-        color: white;
-        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.493);
-        margin: 30px 10px 50px 10px;
-        padding: 20px;
-        font-size: 2.1em;
-        font-family: 'Titillium Web', sans-serif;
-        text-align: center;
-    }
-
-    article#noticia-principal img#imagem1{
-        float: right;
-        padding: 15px;
-    }
-
-    article#noticia-principal h2{
-        font-size: 1.9em;
-        font-family: 'Titillium Web', sans-serif;
-        font-weight: 500;
-        text-align: left;
-        margin: 90px 54px auto;
-    }
-    
-    article#noticia-principal p, article#noticia-principal ul{
-        color: #727272;
-        font-size: 1.1em;
-        font-weight: 400;
-        font-family: 'Open Sans', sans-serif;
-        text-align: justify;
-        margin: 20px 55px auto 60px;
-    }
-
-    section.rodape img#acolasa-footer{
-        margin-top: 10px;
-        margin-left: 10px;
-        width: 250px;
-    }
-    
-    section.rodape img#victor-footer{
-        margin-top: 45px;
-        margin-left: 5px;
-        width: 250px;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&family=Playfair+Display&family=Sedgwick+Ave&display=swap');
 
 
-}
-
-/* inicio modelo celulares  */
-@media (max-width: 750px) {
-
-    div#aba-logo div#fundo{
-        background: url("../imagens/acolasa-fundoDeitado2.jpeg") no-repeat;
-        position: absolute;
-        z-index: -1;
-        background-position: 50% 40%;
-        background-size: 800px;
-        opacity: 0.5;
-        /*padrão 100%*/
-        width: 100%;
-        height: 100%;
-        margin: auto;
-    }
-
-    div#aba-logo div#logo1{
-        position: static;
-        margin: 10% 10% auto;
-        /*margin: 10% 20% auto 10%;
-        position: absolute;
-        top: -20px;
-        left: 15%;*/
-    }
-    div#aba-logo div#logo1 img#logo-acolasa{
-        width: 310px;
-    }
-
-    div#aba-logo div#logo2{
-        position: absolute;
-        top: 14%;
-        right: 10%;
-    }
-
-    div#aba-logo div#logo2 img#logo-victor{
-        width: 300px;
-    }
-
-    div#aba-logo h1{
-        position: absolute;
-        margin: 50px 35% auto;
-        text-align: center;
-        font-family: 'Titillium Web', sans-serif;
-        font-size: 2.5em;
-        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.616);
-    }
-
-    article#noticia-principal img#imagem1{
-    justify-content: center;
-    margin: auto 40px auto;
-    padding: 15px;
-    }
-
-    button#whats{
-        background-color: #52ce5f;
-        position: fixed; 
-        /* top-66 e left-8 padrão */
-        top: 90%;
-        left: 320px;
-        padding: 10px;
-        z-index: 10000000;
-        max-width: 250px;
-        max-height: 60px;
-        width: 190px;
-        height: 30px;
-        padding: 15px;
-        border-radius: 20px;
-        border-style: double;
-        border-color: #2d7434;
-        cursor: pointer;
-        transition: 1.5s;
-}
-
-button#whats:hover {
-        background-color: #368d3f;
-}
-
-button#whats span{
-    position: absolute;
-    color: white;
-    font-family: socialMedia;
-    font-size: 3.5em;
-    top: -27px;
-    left: -5px;
-}
-
-button#whats p{
-    color: white;
-    position: absolute;
-    top: 7px;
-    left: 50px;
-    font-size: 0.8em;
-    font-family: 'Open Sans', sans-serif;
-}
-
-section.rodape img#acolasa-footer{
-    margin-top: 10px;
-}
-
-section.rodape img#victor-footer{
-    margin-top: 45px;
-    margin-left: 5px;
-    width: 300px;
-}
-/*
-article#noticia-principal h1{
-    /*color: #66942f;
-    color: #66942f;
-    font-size: 2.1em;
-    font-family: 'Titillium Web', sans-serif;
-    margin: 10px auto 5px auto;
-    text-align: center;
-}
-*/
-article#noticia-principal h2{
-    font-size: 1.7em;
-    font-family: 'Titillium Web', sans-serif;
-    font-weight: 500;
-    text-align: left;
-    margin: 90px 54px auto;
-}
-
-article#noticia-principal p, article#noticia-principal ul{
-    color: #727272;
-    font-size: 1em;
-    font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
-    text-align: justify;
-    margin: 20px 55px auto 60px;
-}
-
-        }
-/* final modelo celulares  */
-
-/*inicio css generico*/
-div#aba-logo{
+nav#menu{
+    display: block;
     position: relative;
-    padding: 5px;
-    height: 320px;
-    /*width 1299 padrão*/
-    max-width: 1300px;
-    min-width: 400px;
-    margin: -65px auto;
+    top: -130px;
+    left: 20px;
 }
 
-
-
-/*CABEÇALHO*/
-header#cabecalho h1#nome{
-    background-color: #6C9923;
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+}
+nav#menu li{
+    
+    display: inline-block;
+    background-color: #EAB556;
+    padding: 30px;
+    margin: 2px;
+    transition: 2s;
+}
+nav#menu li:hover{
+    background-color: #b38b41ad;
+}
+nav#menu a{
+    text-decoration: none;
     color: white;
+    font-size: 1.2em;
+    font-family: 'Playfair Display', serif;
+}
+nav#menu a:hover{
+    color: black;
+    text-decoration: underline;
+}  
+
+div#interface{
+    /* 600 padrão*/
+    width: 600px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 110px auto;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 5px #32774e85;
+}
+
+header#cabecalho h1#nome{
+    color: #9B2915;
+    /*font-family: 'Goblin One', cursive, sans-serif;*/
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 3.7em;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.493);
-    margin: 30px 10px 50px 10px;
-    padding: 20px;
-    font-size: 2.4em;
-    font-family: 'Titillium Web', sans-serif;
+    margin-top: -95px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
 /*PRINCIPAL*/
 body{
     font-family: Arial, Helvetica, sans-serif;
-    /*overflow-x: hidden; vertical é y e horizonta é x*/
-    /*background-image: linear-gradient(to left, #61E294, #EDAFB8 );*/
-    
+    background-image: linear-gradient(to left, #61E294, #EDAFB8 84%);
+   /* height: 100%;
+    width: 100%; */
 }
 
 a{
+    color: plum;
     text-decoration: none;
 }
 
@@ -464,123 +75,281 @@ a:hover{
     text-decoration: underline;
 }
 
-
-
-/*CORPO&RODAPE*/
-section#corpo{
-    padding: 5px;
-   /* 60px auto -> padrão*/
-    margin: 70px auto;
-    max-width: 1300px;
-    /*max-inline-size: 500px; -> bom para celular*/
-}
-
-section.rodape ul#contato a{
-    color:white; 
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    transition: 1s;
-}
-
-section.rodape ul#contato a:hover{
-    color: #008bd2;
-}
-
-section.rodape ul#contato span{
-    font-family: socialMedia;
-    font-size: 1.4em;
-}
-
-section.rodape div#final{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-}
-
-/*ARTIGO*/
-article#noticia-principal{
-    max-width: 1500px;
-    /*serve para celular?*/
-    min-width: 400px;
-}
-
-
-
-article#noticia-principal ul#redesSociais ul#acolasa, ul#victor{
-    list-style: none;
-}
-
-article#noticia-principal ul#redesSociais ul#acolasa a, ul#victor a{
-    text-decoration: none;
-    color: #008bd2;
-    font-size: 1em;
-}
-
-article#noticia-principal ul#redesSociais ul#acolasa a:hover, ul#victor a:hover{
-    color: #025179;
-}
-
-article#noticia-principal ul#redesSociais li#title{
-    list-style: none;
-    font-size: 1.6em;
-}
-
-article#noticia-principal ul span{
-    font-family: socialMedia;
-    font-size: 2em;
-}
-
-section#camisa{
-    position: relative;
-    margin: 20px auto;
-    width: 300px;
-    height: 280px;
-    border-radius: 10px;
-    border: 2px dashed #66942f;
-    background-color: #b2b2b2;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.555);
-    transition: transform 2s;
-    transform: translateX(0) scale(1);
-}
-
-section#camisa:hover,
-section#camisa:focus{
-    transform: translate(10px) scale(1.35);
-    animation: none;
-}
-
-section#camisa img#imagem-camisa{
-    width: 200px;
-    position: absolute;
-    top: 5px;
-    left: 18%;
-    animation: ease-in;
-}
-
-section#camisa img#imagem-camisa:hover,
-section#camisa img#imagem-camisa:focus{
-    transform: translate(10px) scale(1.2);
-    transition: transform 2s;
-    left: 15%;
-}
-
-section#camisa button#contribuir{
-    position: absolute;
-    left: 26%;
-    margin: 230px auto;
-    background-color: #008bd2;
-    padding: 8px;
-    border-radius: 5px;
-    border-color: #014c72;
-    width: 150px;
+button#whats{
+    position: fixed; 
+    /*600px tá de boa */
+    top: 700px;
+    margin-left: -60px;
+    padding: 10px;
+    z-index: 10000000;
+    max-width: 150px;
+    max-height: 150px;
+    width: 100px;
+    height: 100px;
+    padding: 22px;
+    background: url("../_imagens/whatsapp\ 200.png") no-repeat;
+    background-position: 50% 50%;
+    background-size: 70px;
+    border-style: none;
     cursor: pointer;
 }
 
-section#camisa button#contribuir:hover{
+@-webkit-keyframes whats{
+    from {-webkit-transform: rotate(5deg)}
+    to   {-webkit-transform: rotate(-5deg)}
+}
+@keyframes whats{
+    from { transform: rotate(5deg)}
+    to { transform: rotate(-5deg)}
+}
+button#whats {
+    -webkit-animation: whats 0.6s alternate 8 ease-in-out;
+            animation: whats 0.6s alternate 8 ease-in-out;
+            animation-delay: 16s;
+}
+
+
+button#whats:hover{
+    /*Colocar efeitos para quando o user entrar na area do whats */
+}
+
+/*CORPO&RODAPE*/
+section#corpo{
+    display: block;
+    width: 500px; /* Verificar uma largura melhor para corpo*/
+    float: left; /*Seria preciso caso tivesse um aside */
+    padding: 15px;
+    margin-left: 35px;
+    margin-right: 20px;
+}
+
+footer#rodape{
+    clear: both;
+    border-top: 1px groove grey; /*Verificar o melhor tipo de linha*/
+}
+
+footer#rodape p{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/*MEDIA*/
+/*Analisar uma posição para que os icones apareçam ao lado, no menu */
+img#icone-menu{
+    position: absolute;
+}
+img#logo{
+    position: relative;
+    max-width: 200px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    left: 250px;
+    top: 12px;
+ }
+
+ .logomarca{
+    position: absolute;
+    padding: 30px;
+    width: 30px;
+    margin-top: 0px;
+    background: url("../_imagens/logo-cantim\ sem\ fundo\ 250.png") no-repeat;
+    background-position: 50% 50%;
+    background-size: 120px;
+    -webkit-transition: all 2s ease;
+  }
+  .logomarca:hover{
+    width: 120px;
+    height: 120px;
+    margin-left: -5px;
+    margin-top: -5px;
+    background: url("../_imagens/logo-cantin.png") no-repeat;
+    background-position: 50% 50% ;
+    background-size: 150px;
+    padding: 0%;
+    background-color: aliceblue;
+  }
+
+ .album-fotos {
+    border-radius: 5px;
+    border: 3px solid black;
+    width: 496px;
+    height: 200px;
+    overflow: hidden;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.411);
+    -webkit-transition: all 4s ease-in;
+  }
+  
+  .album-fotos:hover{
+  -webkit-transform: scale(1.2);
+  background-color: rgba(0, 0, 0, 0.753);
+  }
+  
+  .foto{
+    -webkit-transition: all 4s ease-in;
+  }
+  
+  /* Backgrounds */
+  
+  .cc1 {
+    background: url("../_imagens/edited/cantim\ P\ 525x400.jpg") no-repeat;
+    /* manter a resolução de altura para não bugar com o span */ 
+    background-position: 0% -110px;
+    background-size: 500px;
+  }
+  
+  .cc2 {
+    background: url("../_imagens/edited/cantin\ dentro\ G.jpg") no-repeat;
+    background-position: 50% -110%;
+    background-size: 800px;
+  }
+  
+  .cc3{
+    background: url("../_imagens/edited/cantin\ fora\ G.jpg") no-repeat;
+    background-position: 50% -110%;
+    background-size: 800px;
+  }
+  
+  .album-fotos:hover .cc1{
+    background-size: 480px;
+    background-position: 10px -70px;
+    }
+  
+  .album-fotos:hover .cc2{
+    background-size: 780px;
+    background-position: 8px -30px;
+    }
+  
+  .album-fotos:hover .cc3{
+    background-size: 780px;
+    background-position: 8px -60px;
+  }
+
+  .foto span{
+    opacity: 0;
+  line-height: 370px;
+  margin-left: 20px;
+  color: #9B2915;
+  background-color: rgba(255, 255, 255, 0.644);
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.568);
+  padding: 0px;
+  font: 'Nunito', sans-serif;
+  font-weight: 800;
+  }
+  
+  .album-fotos:hover span{
+    opacity: 1;
+  }
+
+  .seguinte{
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-top: -125px;
+    margin-left: 510px;
+    background: url("../_imagens/avancar.png") no-repeat;
+    background-position: 25% 25%;
+    background-size: 100%;
+    cursor: pointer;
+  }
+  
+  .anterior{
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-top: -145px;
+    margin-left: -50px;
+    background: url("../_imagens/voltar.png") no-repeat;
+    background-position: 25% 25%;
+    background-size: 100%;
+    cursor: pointer;
+  }
+
+/*ARTIGO*/
+article#noticia-principal h1{
+    color: #EAB556;
+    font-size: 2.1em;
+    font-family: 'Sedgwick Ave', cursive;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+article#noticia-principal h2{
+    font-size: 1.5em;
+    font-family: 'Playfair Display', serif;
+    color: #8D6B94;
+    padding-top: 10px;
+    margin: 0px 0px 10px 0px ;
+}
+article#noticia-principal p{
+    margin-top: 0px;
+    font-size: 1em;
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+/*APIS*/
+button#mais{
+   /* margin-left: 360px;
+    margin-top: 5px; */
+    margin: 5px auto;
+    padding: 12px;
+    width: 150px;
+    border-radius: 5px;
+    color: white;
+    background-color: #8D6B94;
+    transition: transform 1s;
+    transform: translateX(0) scale(1);   
+    border: none;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+    display: block;
+}
+
+a{
     color: white;
 }
 
-.meio{
-    display: flex;
-    justify-content: center;
+button#mais:hover,
+button#mais:focus{
+    transform: translate(10px) scale(1.5);
+    animation: none;
+    background-color: #705575e5;
+}
+
+button#mais:target{
+    /*display: none; --> some com a tag */
+}
+
+button#voltar{
+    margin: 5px auto;
+    padding: 12px;
+    width: 150px;
+    border-radius: 5px;
+    color: white;
+    background-color: #8D6B94;
+    transition: transform 1s;
+    transform: translateX(0) scale(1);   
+    border: none;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+    display: block;
+}
+
+button#voltar:hover,
+button#voltar:focus{
+    transform: translate(10px) scale(1.5);
+    animation: none;
+    background-color: #705575e5;
+}
+
+iframe#map{
+    border-color: #8D6B94;
+    margin: auto auto 5px auto;
+    width: 499px;
+    height: 450px;
 }
