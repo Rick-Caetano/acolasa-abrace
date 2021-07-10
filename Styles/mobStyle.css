@@ -14,8 +14,7 @@
     src: url(../fontes/social_media_circled/Social\ Media\ Circled.otf);
 }
 
-/* stilo da aba da logo */
-
+/* inicio modelo tablets e dispositivo deitado */
 @media (max-width: 1050px){
 
     div#aba-logo h1{
@@ -32,9 +31,22 @@
         padding: 15px;
     }
 
+    section.rodape img#acolasa-footer{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    section.rodape img#victor-footer{
+        margin-top: 35px;
+        margin-left: 10px;
+        width: 350px;
+    }
 
-}
 
+        }
+/* final modelo tablets e dispositivo deitado */
+
+/* inicio modelo celulares  */
 @media (max-width: 750px) {
 
     div#aba-logo h1{
@@ -132,9 +144,9 @@ article#noticia-principal p, article#noticia-principal ul{
 }
 
         }
+/* final modelo celulares  */
 
-
-
+/*inicio css generico*/
 div#aba-logo{
     position: relative;
     padding: 5px;
