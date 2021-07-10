@@ -56,7 +56,7 @@
         position: fixed; 
         /* top-66 e left-8 padrão */
         top: 90%;
-        left: 1000px;
+        left: 1200px;
         padding: 10px;
         z-index: 10000000;
         max-width: 250px;
@@ -95,7 +95,7 @@
 
     div#aba-logo h1{
         position: relative;
-        margin: 0% auto;
+        margin: 3% auto;
         text-align: center;
         font-family: 'Titillium Web', sans-serif;
         font-size: 3em;
