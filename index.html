@@ -6,43 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.60">
     <meta name="description" content="Campanha abrace - uma parceria Acolasa e Victor Dzenk, para ajudar aqueles que precisam de agasalhos no inverno 2021">
     <meta name="author" content="Henrique Caetano">
-    <meta property="og:image" content="https://acolasa-abrace.vercel.app/imagens/abrace-fundoDeitado.jpeg">
-    <meta property="og:description" content="Campanha abrace - aquecendo o inverno de quem precisa">
-    <meta property="og:title" content="ACOLASA & VICTOR DZENK">
 
-<!--<link rel="stylesheet" href="Styles/deskStyle.css">-->
-    <link rel="stylesheet" href="Styles/mobStyle.css">
+    <!--link personalizado-->
+    <meta property="og:url" content="https://acolasa-abrace.vercel.app/index.html">
+    <meta property="og:image" content="https://acolasa-abrace.vercel.app/imagens/abrace-fundoDeitado.jpeg">
+    <meta property="og:description" content="Campanha abrace - aquecendo o inverno de quem precisa, quer saber como ajudar e ganhar um desconto na Victor? Então acesse esse link">
+    <meta property="og:title" content="ACOLASA & VICTOR DZENK">
+    <meta property="og:type" content="article">
+
+<link rel="stylesheet" href="Styles/deskStyle.css">
     <link rel="shortcut icon" href="imagens/favicon_acolasa/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
-    
+    <script src="JavaScript/funcao.js"></script>
     <script>
-        function exibeMsm(){
-            Swal.fire({
-                title: '<p id="alerTit">Logo responderemos!</p>',
-                text: 'Obrigado por enviar sua mensagem!', //não aceita html no texto
-                icon:'success',
-                footer: '<a href="" style="color:black;">Caso prefira, temos também whatsapp</a>',
-                confirmButtonColor: '#008bd2',
-                backdrop: `rgba(0,0,123,0.4)`, //cor de fundo
-                showClass: {
-                    popup: 'animate__animated animate__fadeInDown'
-                    },
-                hideClass: {
-                    popup: 'animate__animated animate__fadeOutUp'
-                    }
-})}
-
-        function input(){
-            Swal.fire({
-                width:'600px',
-                icon:'question',
-                title:'Faça sua pre-reserva',
-                html: '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeTrIbOHivfcuMqr5v0iyrxpr-efpBjM-Grwz2m6E06lCAqUA/viewform?embedded=true" width="500" height="500" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>'
-            })
-        }
+        detectar_mobile();
     </script>
 
     <title>Campanha abrace</title>
@@ -112,37 +92,18 @@
 
         <a href="https://drive.google.com/file/d/187mMn2lpG-7qHc_PwXt8VKSI0N8t15vp/view?usp=sharing" target="_blank" style="text-decoration: none;"><p id="aviso"><u> Clique na camisa ou neste link para visualizar melhor</u></p></a>
 
-    <h3>Window size is <span class="window-size"></span></h3>
+        <a href="https://api.whatsapp.com/send?phone=5531989799881&text=Ol%C3%A1%2C+tenho+uma+duvida" target="_blank" rel="noopener noreferrer"><button id="whats"><span>Õ</span><p>converse conosco</p></button></a>
+
+    </section>
+
+
+    <!--<h3>Window size is <span class="window-size"></span></h3>
     <p>Knowing this number you can make decisions based in breakpoints of window.</p>
     <hr>
     <h3>Screen size is <span class="screen-size"></span></h3>
     <p>Here you have an idea of device screen size. </p>
     
-        <script>
-          function sizeOfThings(){
-  var windowWidth = window.innerWidth;
-  var windowHeight = window.innerHeight;
-  
-  var screenWidth = screen.width;
-  var screenHeight = screen.height;
-  
-  document.querySelector('.window-size').innerHTML = windowWidth + 'x' + windowHeight;
-  document.querySelector('.screen-size').innerHTML = screenWidth + 'x' + screenHeight;
-
-};
-
-sizeOfThings();
-
-window.addEventListener('resize', function(){
-	sizeOfThings();
-});
-        </script>
-
-        </section>
-
-    <a href="https://api.whatsapp.com/send?phone=5531989799881&text=Ol%C3%A1%2C+tenho+uma+duvida" target="_blank" rel="noopener noreferrer"><button id="whats"><span>Õ</span><p>converse conosco</p></button></a>
-
-   <!-- <footer id="rodape">
+    <footer id="rodape">
         <img id="logo-footer" src="imagens/acolasa-branco 300.png" alt="logomarca da acolasa (branco)">
         
         <div id="texto-final">

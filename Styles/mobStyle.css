@@ -90,14 +90,14 @@
         top: 7px;
         left: 60px;
         font-size: 1.2em;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     }
 
     div#aba-logo h1{
         position: relative;
         margin: 6% auto;
         text-align: center;
-        font-family: 'Titillium Web', sans-serif;
+        font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
         font-size: 3em;
         text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.616);
     }
@@ -119,7 +119,7 @@
         margin: 30px 10px 50px 10px;
         padding: 20px;
         font-size: 2.2em;
-        font-family: 'Titillium Web', sans-serif;
+        font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
         text-align: center;
     }
 
@@ -130,7 +130,7 @@
 
     article#noticia-principal h2{
         font-size: 2em;
-        font-family: 'Titillium Web', sans-serif;
+        font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
         font-weight: 500;
         text-align: left;
         margin: 90px 54px auto;
@@ -140,7 +140,7 @@
         color: #727272;
         font-size: 1.2em;
         font-weight: 400;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
         text-align: justify;
         margin: 20px 55px auto 60px;
     }
@@ -183,7 +183,7 @@
         border-color: #014c72;
         width: 170px;
         cursor: pointer;
-        font-family: 'Titillium Web', sans-serif;
+        font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
         font-size: 1.2em;
     }
 
@@ -231,7 +231,7 @@
         position: absolute;
         margin: 50px 35% auto;
         text-align: center;
-        font-family: 'Titillium Web', sans-serif;
+        font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
         font-size: 2.6em;
         text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.616);
     }
@@ -275,7 +275,7 @@
         top: 6px;
         left: 50px;
         font-size: 1.1em;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     }
 
     header#cabecalho h1#nome{
@@ -285,7 +285,7 @@
         margin: 30px 10px 50px 10px;
         padding: 20px;
         font-size: 2.1em;
-        font-family: 'Titillium Web', sans-serif;
+        font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
         text-align: center;
     }
 
@@ -296,7 +296,7 @@
 
     article#noticia-principal h2{
         font-size: 1.9em;
-        font-family: 'Titillium Web', sans-serif;
+        font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
         font-weight: 500;
         text-align: left;
         margin: 90px 54px auto;
@@ -306,7 +306,7 @@
         color: #727272;
         font-size: 1.1em;
         font-weight: 400;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
         text-align: justify;
         margin: 20px 55px auto 60px;
     }
@@ -363,7 +363,6 @@
         width: 250px;
     }
 
-
 }
 
 /* inicio modelo celulares  */
@@ -408,7 +407,7 @@
         position: absolute;
         margin: 60px 35% auto;
         text-align: center;
-        font-family: 'Titillium Web', sans-serif;
+        font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
         font-size: 2.5em;
         text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.616);
     }
@@ -458,12 +457,12 @@
         top: 7px;
         left: 50px;
         font-size: 0.8em;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     }
 
     article#noticia-principal h2{
         font-size: 1.7em;
-        font-family: 'Titillium Web', sans-serif;
+        font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
         font-weight: 500;
         text-align: left;
         margin: 90px 54px auto;
@@ -473,7 +472,7 @@
         color: #727272;
         font-size: 1em;
         font-weight: 400;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
         text-align: justify;
         margin: 20px 55px auto 60px;
     }
@@ -563,13 +562,12 @@ header#cabecalho h1#nome{
     margin: 30px 10px 50px 10px;
     padding: 20px;
     font-size: 2.4em;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
 /*PRINCIPAL*/
 body{
-    font-family: Arial, Helvetica, sans-serif;
     /*overflow-x: hidden; vertical é y e horizonta é x*/
     /*background-image: linear-gradient(to left, #61E294, #EDAFB8 );*/
     
@@ -597,7 +595,7 @@ section#corpo{
 section.rodape ul#contato a{
     color:white; 
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-size: 15px;
     transition: 1s;
 }
@@ -612,7 +610,7 @@ section.rodape ul#contato span{
 }
 
 section.rodape div#final{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-size: 1em;
 }
 
@@ -662,7 +660,7 @@ p#aviso{
     padding: 5px;
     color: white;
     background-color: #6C9923;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 1.1em;
     text-align: center;
