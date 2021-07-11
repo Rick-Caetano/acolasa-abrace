@@ -145,6 +145,48 @@
         margin: 20px 55px auto 60px;
     }
 
+    section#camisa{
+        position: relative;
+        margin: 20px auto;
+        width: 450px;
+        height: 450px;
+        border-radius: 10px;
+        border: 2px dashed #66942f;
+        background-color: #b2b2b2;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.555);
+        transition: transform 2s;
+        transform: translateX(0) scale(1);
+    }
+
+    section#camisa img#imagem-camisa{
+        width: 320px;
+        position: absolute;
+        top: 5px;
+        left: 16%;
+        animation: ease-in;
+    }
+
+    section#camisa img#imagem-camisa:hover,
+    section#camisa img#imagem-camisa:focus{
+        transform: translate(10px) scale(1.2);
+        transition: transform 2s;
+        left: 13%;
+    }
+
+    section#camisa button#contribuir{
+        position: absolute;
+        left: 32%;
+        margin: 380px auto;
+        background-color: #008bd2;
+        padding: 10px;
+        border-radius: 5px;
+        border-color: #014c72;
+        width: 170px;
+        cursor: pointer;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 1.2em;
+    }
+
         }
 /* final modelo tablets e dispositivo deitado */
 
@@ -160,7 +202,6 @@
         width: 100%;
         height: 100%;
         margin: auto;
-
     }
 
     div#aba-logo div#logo1{
@@ -270,6 +311,46 @@
         margin: 20px 55px auto 60px;
     }
 
+    section#camisa{
+        position: relative;
+        margin: 20px auto;
+        width: 380px;
+        height: 340px;
+        border-radius: 10px;
+        border: 2px dashed #66942f;
+        background-color: #b2b2b2;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.555);
+        transition: transform 2s;
+        transform: translateX(0) scale(1);
+    }
+
+    section#camisa img#imagem-camisa{
+        width: 250px;
+        position: absolute;
+        top: 5px;
+        left: 18%;
+        animation: ease-in;
+    }
+
+    section#camisa img#imagem-camisa:hover,
+    section#camisa img#imagem-camisa:focus{
+        transform: translate(10px) scale(1.2);
+        transition: transform 2s;
+        left: 15%;
+    }
+
+    section#camisa button#contribuir{
+        position: absolute;
+        left: 30%;
+        margin: 285px auto;
+        background-color: #008bd2;
+        padding: 8px;
+        border-radius: 5px;
+        border-color: #014c72;
+        width: 150px;
+        cursor: pointer;
+    }
+
     section.rodape img#acolasa-footer{
         margin-top: 10px;
         margin-left: 10px;
@@ -358,63 +439,105 @@
         transition: 1.5s;
 }
 
-button#whats:hover {
-        background-color: #368d3f;
-}
+    button#whats:hover {
+            background-color: #368d3f;
+    }
 
-button#whats span{
-    position: absolute;
-    color: white;
-    font-family: socialMedia;
-    font-size: 3.5em;
-    top: -27px;
-    left: -5px;
-}
+    button#whats span{
+        position: absolute;
+        color: white;
+        font-family: socialMedia;
+        font-size: 3.5em;
+        top: -27px;
+        left: -5px;
+    }
 
-button#whats p{
-    color: white;
-    position: absolute;
-    top: 7px;
-    left: 50px;
-    font-size: 0.8em;
-    font-family: 'Open Sans', sans-serif;
-}
+    button#whats p{
+        color: white;
+        position: absolute;
+        top: 7px;
+        left: 50px;
+        font-size: 0.8em;
+        font-family: 'Open Sans', sans-serif;
+    }
 
-section.rodape img#acolasa-footer{
-    margin-top: 10px;
-}
+    article#noticia-principal h2{
+        font-size: 1.7em;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 500;
+        text-align: left;
+        margin: 90px 54px auto;
+    }
 
-section.rodape img#victor-footer{
-    margin-top: 45px;
-    margin-left: 5px;
-    width: 300px;
-}
-/*
-article#noticia-principal h1{
-    /*color: #66942f;
-    color: #66942f;
-    font-size: 2.1em;
-    font-family: 'Titillium Web', sans-serif;
-    margin: 10px auto 5px auto;
-    text-align: center;
-}
-*/
-article#noticia-principal h2{
-    font-size: 1.7em;
-    font-family: 'Titillium Web', sans-serif;
-    font-weight: 500;
-    text-align: left;
-    margin: 90px 54px auto;
-}
+    article#noticia-principal p, article#noticia-principal ul{
+        color: #727272;
+        font-size: 1em;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+        text-align: justify;
+        margin: 20px 55px auto 60px;
+    }
 
-article#noticia-principal p, article#noticia-principal ul{
-    color: #727272;
-    font-size: 1em;
-    font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
-    text-align: justify;
-    margin: 20px 55px auto 60px;
-}
+    section#camisa{
+        position: relative;
+        margin: 20px auto;
+        width: 330px;
+        height: 300px;
+        border-radius: 10px;
+        border: 2px dashed #66942f;
+        background-color: #b2b2b2;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.555);
+        transition: transform 2s;
+        transform: translateX(0) scale(1);
+    }
+
+    section#camisa img#imagem-camisa{
+        width: 200px;
+        position: absolute;
+        top: 5px;
+        left: 20%;
+        animation: ease-in;
+    }
+
+    section#camisa img#imagem-camisa:hover,
+    section#camisa img#imagem-camisa:focus{
+        transform: translate(10px) scale(1.2);
+        transition: transform 2s;
+        left: 18%;
+    }
+
+    section#camisa button#contribuir{
+        position: absolute;
+        left: 28%;
+        margin: 240px auto;
+        background-color: #008bd2;
+        padding: 8px;
+        border-radius: 5px;
+        border-color: #014c72;
+        width: 150px;
+        cursor: pointer;
+    }
+
+    section.rodape img#acolasa-footer{
+        margin-top: 10px;
+    }
+
+    section.rodape img#victor-footer{
+        margin-top: 45px;
+        margin-left: 5px;
+        width: 300px;
+    }
+    /*
+    article#noticia-principal h1{
+        /*color: #66942f;
+        color: #66942f;
+        font-size: 2.1em;
+        font-family: 'Titillium Web', sans-serif;
+        margin: 10px auto 5px auto;
+        text-align: center;
+    }
+    */
+    
 
         }
 /* final modelo celulares  */
@@ -500,8 +623,6 @@ article#noticia-principal{
     min-width: 400px;
 }
 
-
-
 article#noticia-principal ul#redesSociais ul#acolasa, ul#victor{
     list-style: none;
 }
@@ -526,51 +647,13 @@ article#noticia-principal ul span{
     font-size: 2em;
 }
 
-section#camisa{
-    position: relative;
-    margin: 20px auto;
-    width: 300px;
-    height: 280px;
-    border-radius: 10px;
-    border: 2px dashed #66942f;
-    background-color: #b2b2b2;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.555);
-    transition: transform 2s;
-    transform: translateX(0) scale(1);
-}
-
 section#camisa:hover,
 section#camisa:focus{
-    transform: translate(10px) scale(1.35);
+    transform: translate(10px) scale(1.2);
     animation: none;
 }
 
-section#camisa img#imagem-camisa{
-    width: 200px;
-    position: absolute;
-    top: 5px;
-    left: 18%;
-    animation: ease-in;
-}
 
-section#camisa img#imagem-camisa:hover,
-section#camisa img#imagem-camisa:focus{
-    transform: translate(10px) scale(1.2);
-    transition: transform 2s;
-    left: 15%;
-}
-
-section#camisa button#contribuir{
-    position: absolute;
-    left: 26%;
-    margin: 230px auto;
-    background-color: #008bd2;
-    padding: 8px;
-    border-radius: 5px;
-    border-color: #014c72;
-    width: 150px;
-    cursor: pointer;
-}
 
 section#camisa button#contribuir:hover{
     color: white;
