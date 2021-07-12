@@ -621,6 +621,10 @@ article#noticia-principal{
     min-width: 400px;
 }
 
+article#noticia-principal ul#detalhes{
+    margin: -10px auto;
+}
+
 article#noticia-principal ul#redesSociais ul#acolasa, ul#victor{
     list-style: none;
 }
@@ -676,4 +680,9 @@ p#aviso:hover{
 .meio{
     display: flex;
     justify-content: center;
+}
+
+.link{
+    text-decoration: none;
+    color: #727272;
 }

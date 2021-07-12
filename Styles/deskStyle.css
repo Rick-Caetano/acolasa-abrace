@@ -325,6 +325,10 @@ article#noticia-principal p, article#noticia-principal ul{
     margin: 20px 55px auto 60px;
 }
 
+article#noticia-principal ul#detalhes{
+    margin: -10px auto;
+}
+
 article#noticia-principal ul#redesSociais ul#acolasa, ul#victor{
     list-style: none;
 }
@@ -409,3 +413,9 @@ p#aviso{
     display: flex;
     justify-content: center;
 }
+
+.link{
+    text-decoration: none;
+    color: #727272;
+}
+
