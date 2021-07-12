@@ -327,6 +327,8 @@ article#noticia-principal p, article#noticia-principal ul{
 
 article#noticia-principal ul#detalhes{
     margin: -10px auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.85em;
 }
 
 article#noticia-principal ul#redesSociais ul#acolasa, ul#victor{

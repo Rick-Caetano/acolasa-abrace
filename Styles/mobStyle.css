@@ -145,6 +145,12 @@
         margin: 20px 55px auto 60px;
     }
 
+    article#noticia-principal ul#detalhes{
+        margin: -10px auto;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.55em;
+    }
+
     section#camisa{
         position: relative;
         margin: 20px auto;
@@ -311,6 +317,12 @@
         margin: 20px 55px auto 60px;
     }
 
+    article#noticia-principal ul#detalhes{
+        margin: -10px auto;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.45em;
+    }
+
     section#camisa{
         position: relative;
         margin: 20px auto;
@@ -458,6 +470,12 @@
         left: 50px;
         font-size: 0.8em;
         font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    }
+
+    article#noticia-principal ul#detalhes{
+        margin: -10px auto;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.75em;
     }
 
     article#noticia-principal h2{
@@ -619,10 +637,6 @@ article#noticia-principal{
     max-width: 1500px;
     /*serve para celular?*/
     min-width: 400px;
-}
-
-article#noticia-principal ul#detalhes{
-    margin: -10px auto;
 }
 
 article#noticia-principal ul#redesSociais ul#acolasa, ul#victor{
