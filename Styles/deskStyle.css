@@ -355,11 +355,26 @@ article#noticia-principal ul span{
     font-size: 2em;
 }
 
+div#videoAco{
+    position: relative;
+    margin: auto;
+    width: 700px;
+    height: 500px;
+}
+
+iframe#video-campanha{
+    position: absolute;
+    width: 660px;
+    height: 415px;
+    margin: 120px auto;
+    background-color: rgba(0, 0, 0, 0.534);
+}
+
 section#camisa{
     position: relative;
     margin: 20px auto;
     width: 450px;
-    height: 450px;
+    height: 470px;
     border-radius: 10px;
     border: 2px dashed #66942f;
     background-color: #b2b2b2;
@@ -392,7 +407,7 @@ section#camisa img#imagem-camisa:focus{
 section#camisa button#contribuir{
     position: absolute;
     left: 29%;
-    margin: 390px auto;
+    margin: 410px auto;
     background-color: #008bd2;
     padding: 8px;
     border-radius: 5px;
@@ -405,6 +420,17 @@ section#camisa button#contribuir{
 
 section#camisa button#contribuir:hover{
     color: white;
+}
+
+section#camisa p#preco{
+    position: absolute;
+    left: 37%;
+    margin: 370px auto;
+    background-color: #b2b2b2;
+    padding: 2px;
+    opacity: 0.9;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px;
 }
 
 p#aviso{

@@ -40,7 +40,17 @@ function detectar_mobile(){
             width:'600px',
             icon:'question',
             title:'Faça sua pre-reserva',
-            html: '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeTrIbOHivfcuMqr5v0iyrxpr-efpBjM-Grwz2m6E06lCAqUA/viewform?embedded=true" width="500" height="500" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>'
+            html: '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeTrIbOHivfcuMqr5v0iyrxpr-efpBjM-Grwz2m6E06lCAqUA/viewform?embedded=true" width="500" height="500" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>',
+            confirmButtonColor: '#008bd2'
+        })
+    }
+
+    function video(){
+        Swal.fire({
+            width:'750px',
+            title:'Campanha abrace video',
+            html:'<iframe id="video-campanha" src="https://www.youtube.com/embed/ywsUQOYit5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+            backdrop: `rgba(0, 0, 0, 0.534)`,
         })
     }
 
